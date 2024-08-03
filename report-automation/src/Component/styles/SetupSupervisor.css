@@ -1,0 +1,26 @@
+.SetupSupervisor {
+  width: 100%;
+  max-width: 670px;
+  margin: auto;
+}
+.SetupSupervisor form{
+  margin: 0;
+}
+
+.SetupSupervisor .content {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 1rem 0;
+}
+
+.SetupSupervisor .content input,
+.SetupSupervisor .content label {
+  margin: 0;
+}
+
+.SetupSupervisor .content input {
+flex: 1;
+}
