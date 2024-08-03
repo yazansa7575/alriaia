@@ -78,7 +78,7 @@ const ReportForm = () => {
       setReportCount(Number(storedCount));
     } else {
       // إذا لم يكن هناك عدد مخزن، ابدأ من 0
-      localStorage.setItem(STORAGE_KEY, "0");
+      localStorage.setItem(REPORTS_COUNT_KEY, "0");
     }
 
       // تحديد مدة التذكير بـ 5 دقائق
@@ -164,7 +164,7 @@ const ReportForm = () => {
     // تحديث عدد التقارير المرسلة
     const newCount = reportCount + 1;
     setReportCount(newCount);
-    localStorage.setItem(STORAGE_KEY, newCount.toString());
+    localStorage.setItem(REPORTS_COUNT_KEY, newCount.toString());
   };
 
   const handleReset = () => {
