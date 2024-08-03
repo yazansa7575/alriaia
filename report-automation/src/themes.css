@@ -1,0 +1,54 @@
+:root {
+  /* Light Theme Variables */
+  --background-color: #edededa6;
+  --background-color-shallow: #ffffff;
+  --text-color: #000000;
+  --button-background: #007bff;
+  --button-background-hover: #2b8ffa;
+  --button-text: #ffffff;
+}
+
+[data-theme="dark"] {
+  /* Dark Theme Variables */
+  --background-color: #121212;
+  --background-color-shallow: #232323;
+  --text-color: #e0e0e0;
+  --button-text: #ffffff;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+button {
+  background-color: var(--button-background);
+  color: var(--button-text);
+}
+
+form {
+  background-color: var(--background-color-shallow);
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+select {
+  color: var(--text-color);
+}
+
+input,
+textarea,
+select {
+  background-color: var(--background-color-shallow);
+}
+input::placeholder {
+  color: #797979;
+}
+
